@@ -1,0 +1,86 @@
+body {margin:0;padding:0;}
+a, button {border:none;}
+.heading {background-color:#EEF3F8;min-height:730px;}
+.inner {width:calc(100vw - 80px);max-width:1290px;margin:0 auto;}
+.heading-bg {min-height:730px;background-color:inherit;background-image:url('../../assets/img/pizza.png');background-blend-mode:darken;background-position:right 0% bottom 0%;background-repeat:no-repeat;}
+.top-line {width:100%;height:47px;padding-top:14px;}
+.logo {display:inline;}
+.title-box {margin-top:121px;max-width:661px;}
+.title-box h1 {color:#000;font-size:64px;font-family:'Poppins',sans-serif;font-weight:600;line-height:130%;}
+.search-box {display:flex;align-items:stretch;gap:1px;height:98px;margin-top:63px;}
+.input-restaurant, .input-locations {flex-basis:38.5%;height:98px;margin:0;padding:0 40px 0 40px;border:none;border-radius:4px;background-color:#FFF;color:rgba(63, 75, 91, 0.60);font-size:20px;font-family:'Open Sans',Helvetica;line-height:29.25px;box-shadow:0px 6px 20px 0px rgba(23, 37, 56, 0.10);}
+.input-locations {flex-basis:41%;text-transform:uppercase;appearance:none;}
+.input-locations {background:url('../../assets/img/chevron-down.svg') no-repeat 90.5% 50% #FFF;}
+.search-btn {flex-basis:20.5%;height:98px;margin:0;padding:0;border-radius:4px;font-size:20px;font-weight:500;line-height:29.25px;text-transform:uppercase;box-shadow:0px 6px 20px 0px rgba(23, 37, 56, 0.10);}
+.content {background-color:#FFF;margin-top:30px;}
+.flex-row {display:flex;gap:30px;}
+.flex-1 {width:100%;max-width:190px;height:264px;margin-bottom:30px;border-radius:12px;cursor:pointer;position:relative;}
+.flex-2 {width:100%;max-width:410px;height:264px;margin-bottom:30px;border-radius:12px;cursor:pointer;position:relative;}
+.food-text {padding:27px;position:absolute;bottom:-6px;}
+.btn {background-color:#6786BC;color:#FFF;font-family:'Open Sans',Helvetica;cursor:pointer;}
+.top-btn {height:35px;float:right;border-radius:12px;width:215px;position:relative;top:5px;font-size:15px;line-height:13px;letter-spacing:1px;}
+.clear {clear:both;}
+.add-btn {text-align:center;}
+.plus {margin-top:80px;margin-bottom:6px;}
+.add-text {color:#FFF;font-size:20px;font-family:'Open Sans',Helvetica;font-weight:600;line-height:29.25px;padding:5px;}
+.food-label {color:#FFF;font-size:20px;font-family:'Open Sans',Helvetica;font-weight:600;line-height:29.25px;position:relative;top:5px;}
+.restaurant-count {color:#FFF;font-size:14px;font-family:'Open Sans',Helvetica;line-height:29.25px;}
+.food-italian {background-image:url('../../assets/img/italian.png');background-repeat:no-repeat;}
+.food-french {background-image:url('../../assets/img/french.png');background-repeat:no-repeat;}
+.food-sweets {background-image:url('../../assets/img/sweets.png');background-repeat:no-repeat;background-color:#B3B3B3;}
+.food-mexican {background-image:url('../../assets/img/mexican.png');background-repeat:no-repeat;}
+.food-asian {background-image:url('../../assets/img/asian.png');background-repeat:no-repeat;}
+.food-coffee-tea {background-image:url('../../assets/img/coffee-tea.png');background-repeat:no-repeat;}
+.empty-space {height:142px;}
+@media (max-width:1199px) {
+	.food-french {background-position:left -80px bottom 0%;}
+}
+@media (max-width:1024px) {
+	.heading-bg {background-position:right -100px bottom 0%;}
+}
+@media (max-width:980px) {
+	.heading-bg {background-position:right -200px bottom 0%;}
+}
+@media (max-width:899px) {
+	.heading-bg {background-position:right -300px bottom 0%;}
+	.flex-row {flex-wrap:wrap;}
+	.flex-1 {width:initial;flex-grow:1}
+	.flex-2 {width:initial;flex-grow:1;}
+	.add-btn {width:initial;flex-grow:0}
+}
+@media (max-width:767px) {
+	.flex-row {margin-bottom:30px;}
+	.flex-1, .flex-2, .add-btn {flex-basis:calc(50% - 15px);max-width:100%;}
+	.flex-row div:last-child {background-size:100%;}
+}
+@media (max-width:699px) {
+	.title-box {max-width:70%;}
+	.title-box h1 {font-size:52px;}
+	.search-box {flex-wrap:wrap;max-width:80%;}
+	.input-restaurant {flex-grow:4;}
+	.input-locations {flex-grow:3;}
+	.search-btn {flex-grow:1;}
+}
+@media (max-width:549px) {
+	.logo {display:block;}
+	.top-btn {display:block;float:none;margin-left:3px;}
+}
+@media (max-width:499px) {
+	.inner {width:calc(100vw - 40px);}
+	.title-box h1 {font-size:36px;}
+}
+@media (max-width:480px) {
+	.flex-row {margin-bottom:30px;}
+	.flex-1, .flex-2, .add-btn {flex-basis:100%;max-width:100%;}
+	.food-french {background-position:left 0% top 0%;}
+	.flex-row div, .flex-row div:last-child {background-size:cover;}
+}
+@media (max-width:459px) {
+	.search-box {margin-top:20px;height:76px;}
+	.input-restaurant {flex-basis:100%;max-width:204px;padding:0 10px 0 10px;height:76px;}
+	.input-locations {flex-basis:100%;max-width:224px;padding:0 10px 0 10px;height:76px;}
+	.search-btn {flex-basis:100%;max-width:224px;height:76px;}
+}
+@media (max-width:399px) {
+	.heading-bg {background-position:right -325px bottom 0%;}
+}
